@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="images/Blackout-logo.png">
+    <link rel="stylesheet" href="css/styleCadastroJogador.css">
+
+    <title> Cadastro Jogador </title>
+</head>
+<body>
+    <div class="imgFundo"></div>
+    <div class="container">
+        <div class="box">
+            <div class="boxJogador">
+                <h1> Cadastrar Jogador! </h1>
+                <form action="/jogador" class="boxJogadorForm" method="post">
+                    <div class="inputComum">
+                        <input type="text" name="nomeJogador" id="nomeJogador" placeholder="Nome Completo" required>
+                        <input type="tel" name="telJogador" id="telJogador" placeholder="Telefone" required>
+                        <input type="email" name="emailJogador" id="emailJogador" placeholder="Email" required>
+                        <input type="text" name="estadoJogador" id="estadoJogador" placeholder="Estado" required>
+                        <input type="text" name="cidadeJogador" id="cidadeJogador" placeholder="Cidade" required>
+                        <input type="text" name="enderecoJogador" id="enderecoJogador" placeholder="Endereço" required>
+                    </div>
+                    <br>
+
+                    <div class="inputRadio">
+                        <p> <b> Sexo: </b> </p>
+                        <input type="radio" name="generoJogador" id="sexoJogador" value="feminino" required />
+                        <label for="femininoJogador">Feminino</label>
+                        <br>
+                        <input type="radio" name="generoJogador" id="sexoJogador" value="masculino" required /> 
+                        <label for="masculinoJogador">Masculino</label>
+                        <br>
+                        <input type="radio" name="generoJogador" id="sexoJogador" value="outros" required />
+                        <label for="outrosJogador">Outros</label>
+                    </div>
+        
+                    <p> <b> Data de Nascimento: </b> </p>
+                    <input type="date" name="nascimentoJogador" id="nascimentoJogador" required>
+
+                    <button type="submit" class="buttonForm">Cadastrar</button>
+                </form>
+            </div>
+            
+            <div class="boxPais">
+                <h1> Bem Vindo! </h1>
+                <br><p>Caso queira cadastrar os responsaveis <br> Clique no botão abaixo</p>
+                <a href="/responsavel"> <button> CADASTRAR </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

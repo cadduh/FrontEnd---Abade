@@ -1,0 +1,27 @@
+{
+  "name": "FrontEnd---Abade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelMQs/FrontEnd---Abade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelMQs/FrontEnd---Abade/issues"
+  },
+  "homepage": "https://github.com/RafaelMQs/FrontEnd---Abade#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "nunjucks": "^3.2.3",
+    "sqlite3": "^5.0.2"
+  }
+}

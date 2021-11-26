@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="images/Blackout-logo.png">
+    <link rel="stylesheet" href="css/styleCadastroPais.css">
+    <title> Cadastro Pais </title>
+</head>
+<body>
+    <div class="imgFundo"></div>
+    <div class="container">
+        <div class="box">
+            <div class="boxJogador">
+                <h1> Cadastrar Responsaveis! </h1>
+                <form action="/responsavel" class="boxJogadorForm" method="post">
+                    <div class="inputComum">
+                        <input type="text" name="nome" id="nomeResponsavel" placeholder="Nome do Responsavel" required>
+                        <input type="email" name="email" id="emailJogador" placeholder="Email" required>
+                    </div>
+                    <br>
+                    <div class="inputRadio">
+                        <p> <b> Como o seu filho é em casa? </b> </p>
+                        <input type="radio" name="caracteristica" id="extrovertidoResponsavel" value="Extrovertido" required />
+                        <label for="extrovertidoResponsavel">Extrovertido</label>
+                        <br>
+                        <input type="radio" name="caracteristica" id="introvertidoResponsavel" value="Introvertido" required />
+                        <label for="introvertidoResponsavel">Introvertido</label>
+                        <br>
+                        <input type="radio" name="caracteristica" id="agitadoResponsavel" value="Agitado" required />
+                        <label for="agitadoResponsavel">Agitado</label>
+                   
+                    </div>
+                    <div class="inputRadio">
+                        <p> <b> Problemas que ja teve: </b> </p>
+    
+                        <select id="senioridade" name="problemas" required>
+                            <option selected disabled value="">Selecione</option>
+                            <option value="Alergia">Alergia</option>
+                            <option value="Convusão">Convusão</option>
+                            <option value="Outros">Outros</option>
+                            <option value="Nenhum">Nenhum</option>
+                          </select>
+                    </div>
+                    <div class="inputRadio ultimo">
+                        <p> <b> Quantas pessoas moram com seu filho? </b> </p>
+    
+                        <input type="radio" id="quantPessoas1" name="moradores" value="1">
+                        <label for="quantPessoas1"> 1</label>
+                        <input type="radio" id="quantPessoas2" name="moradores" value="2">
+                        <label for="quantPessoas2"> 2</label>
+                        <input type="radio" id="quantPessoas3" name="moradores" value="3">
+                        <label for="quantPessoas3"> 3</label>
+                        <input type="radio" id="quantPessoas4" name="moradores" value="4">
+                        <label for="quantPessoas4"> 4</label>
+                        <input type="radio" id="quantPessoas5" name="moradores" value="5">
+                        <label for="quantPessoas5"> 5</label>
+                        <input type="radio" id="quantPessoas6" name="moradores" value="6">
+                        <label for="quantPessoas6"> 6</label>
+                        <input type="radio" id="quantPessoasMais" name="moradores" value="7">
+                        <label for="quantPessoasMais"> mais</label>
+                    </div>
+                    <textarea rows="6" id="experiencia" name="descricao" placeholder="o que acha do seu filho querer fazer essa peneira? "></textarea>
+                    <button type="submit" class="buttonForm">Cadastrar</button>
+                </form>
+            </div>
+            
+            <div class="boxPais">
+                <h1> Bem Vindo! </h1>
+                <br><p>Caso queira cadastrar um jogador <br> Clique no botão abaixo</p>
+                <a href="/jogador"> <button> CADASTRAR </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

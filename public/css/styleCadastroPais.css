@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+
+}
+
+.imgFundo{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+
+}
+/* CONTAINER "GLOBAL" */
+.container{
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOX DOS CONTEUDOS */
+.box {
+    background-color: #F5F5F5;
+    min-width: 800px;
+    min-height: 450px;
+
+    width: 800px;
+    height: 450px;
+
+    border-radius: 15px;
+    box-shadow: 4px 10px 50px #000000;
+}
+
+
+/* INICIO - BOX DOS PAIS */
+
+/* BOX DOS PAIS */
+.boxPais{
+    user-select: none;
+    width: 44%;
+    height: 100%;
+    margin-left: 448.4px;
+    background-color: rgb(28, 107, 70);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PARAGRAFO E H2 DO BOX PAIS */
+.boxPais p,h1{
+    position: relative;
+    top: 150px;
+}
+
+/* PARAGRAFO BOX PAIS */
+.boxPais p{
+    font-size: 12px;
+    opacity: 75%;
+}
+
+/* BOTAO DO BOX PAIS */
+.boxPais button{
+    position: relative;
+    top: 160px;
+    height: 35px;
+    width: 100px;
+    min-height: 35px;
+    min-width: 100px;
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    
+}
+/* HOVER BOTAO DO BOX PAIS */
+.boxPais button:hover{
+    width: 115px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.178);
+    cursor: pointer;
+}
+
+/* FIM - BOX DOS PAIS */
+
+/* INICIO - BOX DO JOGADOR */
+.boxJogador{
+    position: absolute;
+    user-select: none;
+    width: 450px;
+    height: 450px;
+    min-width: 450px;
+    min-height: 450px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(18, 52, 70);
+    overflow: hidden;
+}
+
+.boxJogador form{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.boxJogador h1{
+    font-size: 35px;
+    top: 20px;
+}
+
+.boxJogadorForm{
+    position: absolute;
+    top: 65px;
+}
+
+.inputComum input{
+    height: 30px;
+    width: 180px;
+    margin-top: 50px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #e6e6e6;
+    color: black;
+}
+
+
+.inputRadio{
+    font-size: 13px;
+    margin-left: 20px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.ultimo{
+    margin-left: 75px;
+}
+.inputRadio p{
+    margin-bottom: 8px;
+}
+
+.buttonForm{
+    position: absolute;
+    margin-top: 80px;
+    width: 150px;
+    height: 35px;
+    top: 250px;
+    left: 155px;
+    min-height: 35px;
+    min-width: 150px;
+    border-radius: 10px;
+
+    color: rgb(18, 52, 70);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.buttonForm:hover{
+    width: 200px;
+    height: 45px;
+    left: 130px;
+    min-height: 35px;
+    min-width: 150px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+
+}
+
+textarea {
+    resize: none;
+    width: 89%;
+    padding: 10px;
+    height: 45px;
+}
+/* FIM - BOX DO JOGADOR */
